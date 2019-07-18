@@ -1,13 +1,13 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1562776852000
 codemix.dont.show.upsell.until=1565676696714
-configurationInstallLocation=/C\:/Program Files/eclipse/
+configurationInstallLocation=/C\:/Users/sundooedu/eclipse/jee-2019-06/eclipse/
 eclipse.preferences.version=1
-iconcolormode=grayscale
+iconcolormode=primary
 iconreplacement=false
 includeThemingInOomph=false
-last.download.attempt.time=1563344865704
-lastConfiguration=1563345569227
+last.download.attempt.time=1563409122721
+lastConfiguration=1563409087848
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray
