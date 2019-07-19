@@ -21,7 +21,8 @@ public class StarReverse {
 				System.out.println();
 			}
 			
-			System.out.println("---------------------");
+			System.out.println
+			("---------------------");
 			
 			for(int i=1;i<5;i++){
 				for(int j=4;j>0;j--){
@@ -31,7 +32,7 @@ public class StarReverse {
 						System.out.print("*");
 					}
 				}
-				System.out.println("");
+				System.out.println();
 			}
 
 
