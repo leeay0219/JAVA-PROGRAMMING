@@ -37,12 +37,12 @@ public class ArrayCreateByNewExample {
 				}
 			
 		String[] arr4 = new String[3];
-			for (int i=0; i<arr4.length; i++) {
+			for (int i=0; i<arr4.length; i++) { 
 				System.out.println("arr4 [" + i + "] : " + arr4[i]);
 			}
 			arr4[0] = "이";
 			arr4[1] = "이아";
-			arr4[2] = "이아영";
+			arr4[2] = "이아영"; //객체를 참조하여 "이아영" 불러오기 // 바로 값 저장되는 것 아니다 (기본 type 배열은 곧바로 저장, 나머지는 참조)
 				for (int i=0; i<arr4.length; i++) {
 					System.out.println("arr4 [" + i + "] : " + arr4[i]);
 				}
