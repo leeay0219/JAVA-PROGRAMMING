@@ -10,7 +10,7 @@ public class CastingExample {
 		byte v4 = (byte) v3;
 		System.out.println(v4);
 		
-		char v5 = '가';
+		char v5 = 'H';
 		int v6 = v5; 
 		System.out.println(v6);
 		
