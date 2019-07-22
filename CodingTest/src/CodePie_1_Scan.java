@@ -1,25 +1,21 @@
 import java.util.Scanner; 
-public class CodePie2 {
+public class CodePie_1_Scan {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
 		
+		Scanner sc = new Scanner(System.in);
+		String str = "Hello, Hanwha!";
 		int n = Integer.parseInt(sc.nextLine()); 
-		int sum = 0; 
 		
 		for (int i=0; i<n;i++) {
-			int m = sc.nextInt(); 
-			int o = sc.nextInt(); 
+			int m = Integer.parseInt(sc.nextLine());
 			System.out.println("Case #" + (i+1)); 
+			
 				for (int j=0; j<m; j++) {
-					sum = m + o; 
+					System.out.println(str);
 				}
-			System.out.println(sum);
 		}
 		sc.close();
-	}	
-
+	}
+	
 }
-
-
