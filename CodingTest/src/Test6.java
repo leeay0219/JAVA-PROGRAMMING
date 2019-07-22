@@ -1,40 +1,36 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class Test6 {
-
-	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		boolean go=true;
-		int c;
-		int bal=0; 
-		while(go) {
-			System.out.println("------------------------------");
-			System.out.println("1.¿¹±Ý  2.Ãâ±Ý  3.ÀÜ°í  4.Á¾·á");
-			System.out.println("------------------------------");
-			System.out.print("¼±ÅÃ> ");
-			c=Integer.parseInt(sc.nextLine());
-			if(c==1) {
-				System.out.print("¿¹±Ý¾×> ");
-				c=Integer.parseInt(sc.nextLine());
-				bal=bal+c;
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean run = true; 
+		int balance = 0; 
+	
+		while (run) {
+			System.out.println("--------------------------------");
+			System.out.println("1. ï¿½ï¿½ï¿½ï¿½ 2. ï¿½ï¿½ï¿½ 3. ï¿½Ü°ï¿½ 4. ï¿½ï¿½ï¿½ï¿½"); 
+			System.out.println("--------------------------------");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½>");
+			int choice = Integer.parseInt(sc.nextLine());
+		
+			if (choice==1) {
+				System.out.println("ï¿½ï¿½ï¿½Ý¾ï¿½> ");
+				int input = Integer.parseInt(sc.nextLine());
+				balance += input; 
 			}
-			else if(c==2) {
-				System.out.print("Ãâ±Ý¾×> ");
-				c=Integer.parseInt(sc.nextLine());
-				bal=bal-c;
+			if (choice==2) {
+				System.out.println("ï¿½ï¿½Ý¾ï¿½> ");
+				int output = Integer.parseInt(sc.nextLine());
+				balance -= output; 	
 			}
-			else if(c==3) {
-				System.out.println("ÀÜ°í> "+bal);
-				
+			if (choice==3) {
+				System.out.println("ï¿½Ü°ï¿½> " + balance);
 			}
-			else if(c==4) {
-				System.out.print("ÇÁ·Î±×·¥ Á¾·á");
-				go=false;
+			if (choice==4) {
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½");
+				break; 
 			}
 		}
 		sc.close();
-
 	}
-
 }
