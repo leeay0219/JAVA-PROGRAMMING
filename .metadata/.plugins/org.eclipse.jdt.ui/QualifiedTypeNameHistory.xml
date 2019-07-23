@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="chap05.sec03.exam01.Week"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-=======
-<fullyQualifiedTypeName name="java.util.Scanner"/>
->>>>>>> 1f0b33131b45db0d2d522cac64118fc5a477d142
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

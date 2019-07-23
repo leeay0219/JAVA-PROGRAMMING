@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=1f0b33131b45db0d2d522cac64118fc5a477d142
 AbstractTextEditor.Color.Background=28,31,34
 AbstractTextEditor.Color.Background.SystemDefault=false
 AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
-=======
->>>>>>> 1f0b33131b45db0d2d522cac64118fc5a477d142
 eclipse.preferences.version=1
 overviewRuler_migration=migrated_3.1
