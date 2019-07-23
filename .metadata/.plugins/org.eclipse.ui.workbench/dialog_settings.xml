@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="659"/>
-		<item key="DIALOG_Y_ORIGIN" value="169"/>
+		<item key="DIALOG_X_ORIGIN" value="-3"/>
+		<item key="DIALOG_Y_ORIGIN" value="97"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item key="dialogHeight" value="-1"/>
@@ -15,5 +15,9 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="ImportExportAction">
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 	</section>
 </section>

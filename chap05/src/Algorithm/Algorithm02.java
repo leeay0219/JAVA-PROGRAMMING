@@ -24,8 +24,13 @@ public class Algorithm02 {
 		
 		for (int i=0; i<arr.length; i++) {
 			if (first < arr[i]) {
+<<<<<<< HEAD
 				second = first; // ìµœëŒ€ê°’ ê°±ì‹  ì „ì— ì´ì „ì˜ ìµœëŒ€ê°’ ì €ìž¥
 				first = arr[i];  // ìµœëŒ€ê°’ ê°±ì‹ 
+=======
+				second = first; // ÃÖ´ë°ª °»½Å Àü¿¡ ÀÌÀüÀÇ ÃÖ´ë°ª ÀúÀå
+				first = arr[i];  // ÃÖ´ë°ª °»½Å
+>>>>>>> 1f0b33131b45db0d2d522cac64118fc5a477d142
 			}
 			else if (second < arr[i] && first > arr[i] || first == second) {
 				second = arr[i]; 
