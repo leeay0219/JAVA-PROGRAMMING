@@ -9,7 +9,7 @@ public class Algorithm04 {
 		int tmp = arr[0]; 
 		
 		//내림차순
-		for (int i=0; i < arr.length; i++) {
+		for (int i=0; i < arr.length-1; i++) {
 			for (int j=i+1; j < arr.length; j++) {
 					if (arr[i] < arr[j]) {
 						tmp = arr[j];

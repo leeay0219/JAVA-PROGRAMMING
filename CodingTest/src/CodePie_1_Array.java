@@ -19,7 +19,6 @@ public class CodePie_1_Array {
 				System.out.println(str); 
 			}
 			
-			
 		}
 		
 		sc.close();

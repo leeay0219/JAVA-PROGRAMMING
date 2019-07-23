@@ -10,8 +10,9 @@ public class CodePie2_Array {
 		int[] o = new int[n];
 		int[] sum = new int[n]; 
 
-		for (int i = 0; i < n; i++) {
-			m[i] = sc.nextInt();
+		for (int i = 0; i < n; i++)
+		{
+			m[i] = sc.nextInt(); 
 			o[i] = sc.nextInt();
 			sum[i] =  m[i] + o[i];
 		}
@@ -21,7 +22,6 @@ public class CodePie2_Array {
 			System.out.println(sum[j]);
 		}
 		
-
 		sc.close(); 
 	}
 	
