@@ -20,7 +20,9 @@ public class Team2 {
 		int m = sc.nextInt(); 
 		sc.nextLine(); 
 		
-		
+		for (int i=0; i<m-n; i++) {
+			
+		}
 	}
 
 }
