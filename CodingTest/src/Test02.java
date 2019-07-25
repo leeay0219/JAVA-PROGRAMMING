@@ -23,11 +23,12 @@ public class Test02 {
 				}
 			} 
 			student = student / num * 100; 
-			System.out.printf("%.3f", student);
+			System.out.printf("%.3f%%", student);
 			System.out.println();		
 		}
 		sc.close();
 		
 	}
+	
 		
 }

@@ -1,20 +1,28 @@
-import java.util.Scanner; 
 
+import java.util.Scanner;
+ 
 public class Main {
+ 
+    public static void main(String[] args) {
+    	Scanner sc = new Scanner(System.in);
+    	int a = Integer.parseInt(sc.nextLine());
+    	int b = Integer.parseInt(sc.nextLine());
+    	int c = Integer.parseInt(sc.nextLine());
+    	int result = a*b*c; 
+    	int[] num = new int[10];
+    	
+    	while(result>0)
+        {
+            num [result%10]++;
+            result/=10;
+        }
+ 
+        for(int n : num)
+        {
+            System.out.println(n);
+        }
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int x = sc.nextInt();
-		for (int i = 0; i < n; i++) {
-			int input = sc.nextInt();
-			if (input >=1 && input <=10000) {
-				if (input < x) {
-				System.out.print (input + " ");
-				} 
-			} else break; 
-
-		}
-		sc.close(); 
-  }
+    }
+    
 }
+ 
