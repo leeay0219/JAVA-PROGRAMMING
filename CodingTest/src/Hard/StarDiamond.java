@@ -9,7 +9,7 @@ public class StarDiamond {
 		
 		for (int i = -m; i<=m; i++) {
 			int k = 0; 
-			for (int j = 0; j < n-Math.abs(i); j++) {
+			for (int j = 0; j < n - Math.abs(i); j++) {
 				String result = k < Math.abs(i) ? " " : "*";
 				System.out.print(result);
 				k++;
@@ -17,5 +17,5 @@ public class StarDiamond {
 			System.out.println(); 
 		}
 	}
-
 }
+

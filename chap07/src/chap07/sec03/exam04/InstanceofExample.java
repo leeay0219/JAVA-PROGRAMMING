@@ -10,7 +10,11 @@ public class InstanceofExample {
 		System.out.println(a2 instanceof B);
 
 	}
+	public static void method(A a) {
+		if (a instanceof B) {}
+	}
 }
+
 
 class A{}
 class B extends A{}
@@ -21,3 +25,4 @@ class E extends B{}
 
 class F extends C{}
 class G extends C{}
+
