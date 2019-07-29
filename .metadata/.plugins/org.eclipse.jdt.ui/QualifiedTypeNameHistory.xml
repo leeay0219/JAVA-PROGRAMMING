@@ -5,9 +5,21 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="chap07.sec02.exam02.Child"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="chap07.sec03.exam04.A"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam01.A.B"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam01.A.C"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam02.A.B"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam05.Outter.Nested"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam06.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam06.Android.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="chap09.sec01.exam06.Android.Button"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,6 +1,6 @@
 package CodePie;
 import java.util.*; 
-public class CodePie05 {
+public class CodePie5_Simple {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
