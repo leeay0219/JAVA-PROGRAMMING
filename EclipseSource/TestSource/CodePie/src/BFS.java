@@ -1,80 +1,7 @@
-import java.util.*; 
-public class BFS {
-	static int n; 
-	static int u; 
-	static int v; 
-	static int [][] map;
-	static int dx[] = {1, -1, 0, 0}; 
-	static int dy[] = {0, 0, -1, 1}; 
-	static int [][] visit;
-	
-	static class Pair {
-		int x,y; 
-		Pair(int x, int y) {
-			this.x = x; 
-			this.y = y; 
-		}
-	}
-
-	public static void bfs () {
-		Queue<Pair>q = new LinkedList<>(); 
-		q.add(new Pair(0,0));
-		
-		while (!q.isEmpty()) {
-			Pair p = q.poll();
-			
-			for (int i=0; i<n; i++) {
-				int nx = p.x + dx[i]; 
-				int ny = p.y + dy[i]; 
-				
-				if (nx<0 || ny<0 || nx>=n || ny>=u) 
-					continue; 
-				
-				if (map[nx][ny] == 0 && visit[nx][ny]==0) {
-					visit[nx][ny] = 1; 
-					q.add(new Pair (nx, ny));
-				} 
-				
-				if (map[nx][ny] == 1) {
-					visit[nx][ny]++; 
-					if (visit[nx][ny]>=2)
-						map[nx][ny]=0; 
-				}
-			}
-		}
-	}
-	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); 
-		int t = Integer.parseInt(sc.nextLine());
-		
-		for (int i=0; i<t; i++) {
-			n = Integer.parseInt(sc.nextLine()); //node의 수
-			for (int j=0; j<n; j++) {
-				u = sc.nextInt(); // 두 정점 (u,v)의 간선
-			}	
-			map = new int[n+1][n+1];
-			visit = new int [n+1][n+1]; 
-			for (int k=0; k<n; k++) {
-				for (int j=0; j<n; j++) {
-					map[i][j] = sc.nextInt();
-				}
-				bfs();
-				if (visit[i][k] == 1) {
-					System.out.print("Case #" + (i+1) + "\n");
-					System.out.println("YES"); 
-				} else
-					System.out.print("Case #" + (i+1) + "\n");
-					System.out.println("NO"); 
-			}
-		}
-		sc.close();
-	}
-
-}
-
 //
-//BFS란 큐를 사용한 탐색 방법이다. BFS의 진행방법은 다음과 같다.
+//BFS란 큐를 사용한 탐색 방법이다. BFS의 진행방법은 다음과 같다..
+
+
 //
 //①. 큐 안에1번 노드가 들어가 있다.
 //
@@ -87,11 +14,7 @@ public class BFS {
 //노드 N개의 간선의 방향이 없는 트리와 BFS의 탐색결과가 주어졌을 때 올바른 BFS탐색결과라면 “YES” 그렇지 않다면 “NO”를 출력하여라.
 //
 // 
-//
-//
-//
-// 
-//
+
 //위의 그래프는 (1 2 3 4), (1 3 2 4) 두 가지 탐색결과를 가질 수 있다.
 //
 //INPUT FORMAT
@@ -124,3 +47,75 @@ public class BFS {
 //Case #2
 //NO
 
+
+
+ 
+import java.util.*;
+import java.io.*;
+ 
+public class BFS {
+    static int n;
+    static int m;
+    static int map[][];
+    static int dx[] = {1,-1,0,0};
+    static int dy[] = {0,0,-1,1};
+    static boolean[] visit;
+    public static void main(String[] args) throws Exception {
+ 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        n = Integer.parseInt(br.readLine());
+        m = Integer.parseInt(br.readLine());
+        map = new int[n+1][n+1];
+        visit = new boolean[n+1];
+        
+ 
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+            	Scanner sc = new Scanner(System.in);
+                map[i][j] = sc.nextInt(); 
+                sc.close();
+            }
+        }
+        bw.flush();
+        bw.close();
+    }
+    
+        public static void bfs(){
+	        Queue<Pair> q = new LinkedList<>();
+	        q.add(new Pair(0,0));
+	 
+	        while(!q.isEmpty()){
+	            Pair p = q.poll();
+	 
+	            for(int i=0;i<4;i++){
+	                int nx = p.x + dx[i];
+	                int ny = p.y + dy[i];
+	                int [][] visit2 = new int[nx][ny];
+	 
+	                if(nx<0 || ny<0 || nx>=n || ny>=m)
+	                    continue;
+	                
+	                if(map[nx][ny]==0 && visit2[nx][ny]==0){
+	                    visit2[nx][ny]  = 1;
+	                    q.add(new Pair(nx,ny));
+	                }
+	                if(map[nx][ny]==1){
+	                    visit2[nx][ny]++;
+	                    if(visit2[nx][ny]>=2)
+	                    map[nx][ny]=0;
+	                }
+	            }
+	        }
+        }
+ 
+ 
+		static class Pair{
+		    int x,y;
+		    Pair(int x,int y){
+		        this.x = x;
+		        this.y = y;
+		    }
+		}
+}

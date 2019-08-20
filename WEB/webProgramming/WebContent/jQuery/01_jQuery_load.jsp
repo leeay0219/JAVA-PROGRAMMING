@@ -4,26 +4,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Insert title here</title>
+		<script type = "text/javascript" src = "../common/js/jquery-3.4.1.min.js"></script>
 		<script type = "text/javascript">
 			function fun1() {
-				var imgList = document.getElementsByTagName("img");
-				for (var i=0; i<imgList; i++) {
-					imgList[i].src = "../common/images/photo2.jpg";
-				}
+				var imgList = $("img");
+				img.attr("src", "../common/images/photo2.jpg")
 			}
 			function fun2() {
-				var img = document.getElementById("img1");
-				img.src = "../common/images/photo3.jpg";
+				var img = $("#img");
+				img.attr("src", "../common/images/photo3.jpg");
 			}
 			function fun3() {
-				var imgList = document.getElementsByClassName("class1");
-				for (var i=0; i<imgList; i++) {
-					imgList[i].src = "../common/images/photo4.jpg";
-				}	
-			}
+				var imgList = $(".class1");
+				img.attr("src", "../common/images/photo4.jpg");
+			}	
 		</script>
 	</head>
-	
+
 	<body>
 		<button onclick = "fun1()"> getElementsByTagName </button>
 		<button onclick = "fun2()"> getElementById </button>
