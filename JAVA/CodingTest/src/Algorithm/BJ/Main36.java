@@ -15,15 +15,13 @@ public class Main36 {
 				if (s.charAt(i-1) == '(') {
 					st.pop();
 					result += st.size();
-					System.out.println(result);
 				} else {
 					st.pop();
 					result += 1;
-					System.out.println(result);
 				}
 			}
 		}
+		System.out.println(result);
 		sc.close();
 	}
-
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 style = "color: dodgerBlue">환영합니다.(아영)</h1>
+<a href = "first2?myname=ahyeong&age=20">To first Page</a>
+<hr>
+<form action = "first" method = "get"> <!-- 생략하면 get방식. 한국어 자동 인코딩 -->
+	이름: <input type = "text" name = "myname"><br>
+	나이: <input type = "number" name = "age"><br>
+	<input type = "submit" value = "서버전송">
+</form>
+<hr>
+<form action = "first" method = "post"> <!--  직접 인코딩 해서 읽어와야함  -->
+	이름: <input type = "text" name = "myname"><br>
+	나이: <input type = "number" name = "age"><br>
+	<input type = "submit" value = "서버전송">
+</form>
+<!-- 다른페이지 요청. 파라메터 쓰기 -->
+</body>
+</html>
